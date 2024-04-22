@@ -26,7 +26,7 @@ jobs:
       if: steps.check-pods.outputs.crash-pods != 0
       uses: rtCamp/action-slack-notify@v2
       env:
-        SLACK_CHANNEL: tests
+        SLACK_CHANNEL: alarm_k3s
         SLACK_ICON: https://github.com/rtCamp.png?size=48
         SLACK_COLOR: 'red'
         SLACK_USERNAME: rtCamp
